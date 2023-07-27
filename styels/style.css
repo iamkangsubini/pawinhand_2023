@@ -1,4 +1,6 @@
+/* Descktop */
 header {
+    position: relative;
     background: pink;
     max-width: 1160px;
     height: 100px;
@@ -32,4 +34,23 @@ header nav ul li a {
     font-weight: 400;
     letter-spacing: -0.02em;
 }
-header nav .m_nav {display: none;}
+header nav .m_nav_open {display: none;}header .m_nav_open {
+    background: rgb(165, 255, 255);
+    position: absolute;
+    display: none; top: 100px;
+    width: calc(100% - 30px);
+    padding: 43px 0;
+}
+header .m_nav_open #close {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 24px;
+}
+header .m_nav_open ul {
+    text-align: center;
+}
+header .m_nav_open ul li {
+    margin-bottom: 30px;
+}
+header .m_nav_open ul li a {font-size: 1.333rem;}
