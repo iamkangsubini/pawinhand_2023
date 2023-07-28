@@ -40,6 +40,7 @@ header nav .m_nav_open {display: none;}header .m_nav_open {
     display: none; top: 100px;
     width: calc(100% - 30px);
     padding: 43px 0;
+    -webkit-column-width: 100%;
 }
 header .m_nav_open #close {
     position: absolute;
@@ -54,3 +55,81 @@ header .m_nav_open ul li {
     margin-bottom: 30px;
 }
 header .m_nav_open ul li a {font-size: 1.333rem;}
+/* main */
+main {}
+/* main-1. swiper-slide */
+/* swiper 플그링ㄴ의 정식명칭 클래스는 웹 페이지 1장에서 swiper가 2개 이상 들어올 경우 디자인이 강제로 중복될 수 있으므로 개별 아이디 및 클래스를 사용해서 선택자를 만들고 디자인한다. */
+main #pawin_slide {
+    width: 1160px; height: 650px;
+    background: rgb(240, 188, 125);
+}
+main #pawin_slide .swiper-wrapper {}
+main #pawin_slide .swiper-wrapper .swiper-slide {
+    font-size: 3rem;
+}
+main #pawin_slide .swiper-wrapper .slide1 {
+    background: url("https://picsum.photos/id/10/1160");
+}
+main #pawin_slide .swiper-wrapper .slide2 {
+    background: url("https://picsum.photos/id/11/1160");
+}
+main #pawin_slide .swiper-wrapper .slide3 {
+    background: url("https://picsum.photos/id/12/1160");
+}
+main #pawin_slide .swiper-wrapper .slide4 {
+    background: url("https://picsum.photos/id/13/1160");
+}
+/* 2 */
+#bin_slide {
+    width: 1160px; height: 300px;
+    background-color: lemonchiffon;
+}
+#bin_slide .swiper-wrapper {}
+#bin_slide .swiper-wrapper .swiper-slide {
+    color: #fff;
+    font-size: 4rem;
+}
+#bin_slide .swiper-wrapper .slide1 {
+    background: url("https://picsum.photos/id/1/1160");
+}
+#bin_slide .swiper-wrapper .slide2 {
+    background: url("https://picsum.photos/id/2/1160");
+}
+#bin_slide .swiper-wrapper .slide3 {
+    background: url("https://picsum.photos/id/3/1160");
+}
+main #bin_slide .swiper-button-prev {
+    background: url(../images/left2\ arrow.png);
+}
+main #bin_slide .swiper-button-next {
+    background: url(../images/right2\ arrow.png);
+}
+main #bin_slide .swiper-button-prev,
+main #bin_slide .swiper-button-next {
+    width: 40px; height: 40px;
+}
+main #bin_slide .swiper-button-prev::after,
+main #bin_slide .swiper-button-next::after {
+    display: none;
+}
+
+
+
+
+
+
+main #pawin_slide .swiper-button-prev {
+    background: url(../images/left_button.png);
+}
+main #pawin_slide .swiper-button-next {
+    background: url(../images/right_button.png);
+}
+main #pawin_slide .swiper-button-prev,
+main #pawin_slide .swiper-button-next {
+    width: 40px; height: 40px;
+}
+/* swiper-slide 라이브러리에서 기본제공하는 이전, 다음 숨기기 */
+main #pawin_slide .swiper-button-prev::after,
+main #pawin_slide .swiper-button-next::after {
+    display: none;
+}
